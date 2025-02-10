@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'the-events-calendar/the-events-calendar',
-        'pretty_version' => 'dev-release/T25.adamwarlock',
-        'version' => 'dev-release/T25.adamwarlock',
-        'reference' => 'dab1c56722b3f1788811e2a8dffec1f6ce1f3803',
+        'pretty_version' => 'dev-release/T25.antman',
+        'version' => 'dev-release/T25.antman',
+        'reference' => 'cbf9dca7a9452dfddbf8009632937679740583df',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'the-events-calendar/the-events-calendar' => array(
-            'pretty_version' => 'dev-release/T25.adamwarlock',
-            'version' => 'dev-release/T25.adamwarlock',
-            'reference' => 'dab1c56722b3f1788811e2a8dffec1f6ce1f3803',
+            'pretty_version' => 'dev-release/T25.antman',
+            'version' => 'dev-release/T25.antman',
+            'reference' => 'cbf9dca7a9452dfddbf8009632937679740583df',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
