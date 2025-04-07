@@ -3,7 +3,7 @@
         'name' => 'the-events-calendar/tribe-common',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '9afa44d2fafbd16eb27c91ab60069f7e661136b0',
+        'reference' => '08e3ba58577f7bb14824638b66005bfa6ce5e96f',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -29,9 +29,9 @@
             'dev_requirement' => false,
         ),
         'monolog/monolog' => array(
-            'pretty_version' => '1.24.0',
-            'version' => '1.24.0.0',
-            'reference' => 'bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266',
+            'pretty_version' => '2.10.0',
+            'version' => '2.10.0.0',
+            'reference' => '5cf826f2991858b54d5c3809bee745560a1042a7',
             'type' => 'library',
             'install_path' => __DIR__ . '/../monolog/monolog',
             'aliases' => array(),
@@ -58,7 +58,7 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0.0',
+                0 => '1.0.0 || 2.0.0 || 3.0.0',
             ),
         ),
         'stellarwp/admin-notices' => array(
@@ -136,9 +136,9 @@
             'dev_requirement' => false,
         ),
         'stellarwp/telemetry' => array(
-            'pretty_version' => '2.3.2',
-            'version' => '2.3.2.0',
-            'reference' => 'a4bc84f1b9539ae5418e76caab31355191273a9c',
+            'pretty_version' => '2.3.3',
+            'version' => '2.3.3.0',
+            'reference' => 'cb302096350b047ab203367c8198bd0c5d1805cc',
             'type' => 'library',
             'install_path' => __DIR__ . '/../stellarwp/telemetry',
             'aliases' => array(),
@@ -156,7 +156,7 @@
         'the-events-calendar/tribe-common' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '9afa44d2fafbd16eb27c91ab60069f7e661136b0',
+            'reference' => '08e3ba58577f7bb14824638b66005bfa6ce5e96f',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
