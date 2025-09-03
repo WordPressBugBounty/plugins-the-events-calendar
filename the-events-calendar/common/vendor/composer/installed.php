@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'the-events-calendar/tribe-common',
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
-        'reference' => 'da0ee05a471c852b84eafde28de3e31ec9bf8eec',
+        'pretty_version' => '6.9.2',
+        'version' => '6.9.2.0',
+        'reference' => '02c7b8e809311ead0044e50feabc736c5ea6d3f9',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -163,9 +163,9 @@
             'dev_requirement' => false,
         ),
         'the-events-calendar/tribe-common' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => 'da0ee05a471c852b84eafde28de3e31ec9bf8eec',
+            'pretty_version' => '6.9.2',
+            'version' => '6.9.2.0',
+            'reference' => '02c7b8e809311ead0044e50feabc736c5ea6d3f9',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
