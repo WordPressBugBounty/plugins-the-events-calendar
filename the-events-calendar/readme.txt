@@ -3,7 +3,7 @@
 Contributors: theeventscalendar, stellarwp, borkweb, bordoni, brianjessee, aguseo, camwynsp, jentheo, leahkoerper, lucatume, neillmcshea, vicskf, zbtirrell
 Tags: events, calendar, event, schedule, organizer
 Donate link: https://evnt.is/29
-Stable tag: 6.15.2
+Stable tag: 6.15.3
 Requires at least: 6.6
 Tested up to: 6.8.2
 Requires PHP: 7.4
@@ -231,6 +231,12 @@ Previous versions of The Events Calendar are not cross-compatible with 6.X add-o
 Remember to always make a backup of your database and files before updating!
 
 == Changelog ==
+
+= [6.15.3] 2025-09-10 =
+
+* Tweak - * Tweak - Changed views: `blocks/event-venue`, `blocks/parts/map`, `blocks/parts/venue`, `modules/meta/map`, `modules/meta/organizer`, `modules/meta/venue`, `v2/components/header`, `v2/day`, `v2/day/event/venue`, `v2/list`, `v2/list/event/venue`
+* Security - Ensures password protected Venues and Organizers have their data protected. [SVUL-19]
+* Language - 0 new strings added, 59 updated, 0 fuzzied, and 0 obsoleted.
 
 = [6.15.2] 2025-09-09 =
 
