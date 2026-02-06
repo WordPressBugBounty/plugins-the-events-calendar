@@ -356,8 +356,8 @@ if ( ! class_exists( 'Tribe__Support' ) ) {
 				wp_send_json_error( __( 'Invalid Key', 'tribe-common' ) );
 			}
 
-			$key = $query['key'];
-			if ( $key != $optin_key ) {
+			$key = (string) ( $query['key'] ?? '' );
+			if ( $key !== $optin_key ) {
 				wp_send_json_error( __( 'Invalid Key', 'tribe-common' ) );
 			}
 
@@ -390,7 +390,7 @@ if ( ! class_exists( 'Tribe__Support' ) ) {
 		 */
 		public static function ajax_sysinfo_optin() {
 
-			if ( ! isset( $_POST['confirm'] ) || ! wp_verify_nonce( $_POST['confirm'], 'sysinfo_optin_nonce' ) ) {
+			if ( ! isset( $_POST['confirm'] ) || ! wp_verify_nonce( $_POST['confirm'], 'sysinfo_optin_nonce' ) || ! current_user_can( 'manage_options' ) ) {
 				wp_send_json_error( __( 'Permission Error', 'tribe-common' ) );
 			}
 

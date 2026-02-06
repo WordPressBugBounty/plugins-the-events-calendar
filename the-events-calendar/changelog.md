@@ -1,5 +1,110 @@
 # Changelog
 
+### [6.15.15] 2026-01-28
+
+* Tweak - Correct datepicker navigation to include icons on click. [TEC-5736]
+* Language - 0 new strings added, 0 updated, 0 fuzzied, and 0 obsoleted.
+
+### [6.15.14] 2026-01-13
+
+* Version - The Events Calendar 6.15.14 is only compatible with Events Pro 7.7.12 or higher.
+* Fix - Ensure that the Series post status is not changed during maintenance.
+* Fix - Improve category table stability by preventing fatal errors when custom column data receives null values. [TEC-5712]
+* Fix - Prevent category data from persisting between events when some have colored categories and others do not. Props to @deltragon. [TEC-5622]
+* Tweak - Add a visual outline when a day is in focus in the datepicker for improved accessibility. [TEC-5646]
+* Tweak - Change content template name to 'embed-content' to avoid conflicts for Calendar Embeds. [TEC-5717]
+* Tweak - Enhance Top Bar datepicker with semantic HTML, ARIA support, and reliable keyboard navigation. [TEC-5620]
+* Tweak - Improve archive view content title to default to an H1 while allowing heading tag overrides via tec_events_views_v2_view_{$view_slug}_content_title_heading_tag filter. [TEC-5617]
+* Tweak - Improve JavaScript namespace initialization by ensuring window.tribe is defined before category color scripts run. [TEC-5712]
+* Tweak - Increase contrast for current day in the datepicker for improved accessibility. [TEC-5640]
+* Tweak - Increase contrast in datepicker navigation arrows for improved accessibility. [TEC-5639]
+* Tweak - Increase contrast of past events title for improved accessibility. [TEC-5642]
+* Tweak - Increase contrast for month view past multiday events for improved accessibility. [TEC-5641]
+* Tweak - Increase contrast on pagination arrows for improved accessibility. [TEC-5638]
+* Tweak - Reorder event markup in archive and widget views so event titles precede their date and time for improved screen reader navigation. [TEC-5621]
+* Language - 2 new strings added, 57 updated, 0 fuzzied, and 1 obsoleted.
+
+### [6.15.13.1] 2026-01-07
+
+* Fix - Corrective language fix for Category Colors. [TEC-36]
+
+### [6.15.13] 2025-12-18
+
+* Security - Strengthen the user access level in the system information opt-in functionality. [SVUL-35]
+
+### [6.15.12.2] 2025-11-20
+
+* Fix - Removes the <main /> element as a wrapper in events related pages, avoiding the calendar page rendering issues for many themes. Adds a `role="main"` to the first element printed by The Events Calendar on those pages to maintain accessibility. [TEC-5729]
+
+### [6.15.12.1] 2025-11-19
+
+* Fix - Provides context to a translatable placeholder which could result in an error when using existing translation. [TEC-5728]
+* Language - 1 new strings added, 5 updated, 0 fuzzied, and 0 obsoleted.
+
+### [6.15.12] 2025-11-18
+
+* Version - The Events Calendar 6.15.12 is only compatible with Event Tickets 5.27.0 or higher.
+* Version - The Events Calendar 6.15.12 is only compatible with Events Pro 7.7.11 or higher.
+* Fix - Correct use of globals in admin scripts.
+* Tweak - Added filters: `tec_events_rest_v1_events_read_params`, `tec_events_rest_v1_venues_read_params`, `tec_events_main_container_id`
+* Tweak - Removed filters: `tec_events_rest_v1_events_read_args`, `tec_events_rest_v1_venues_read_args`
+* Tweak - Changed views: `v2/components/content-title`, `v2/day/time-separator`, `v2/list/event/title`, `v2/list/month-separator`, `v2/month/calendar-body/day/date`
+* Tweak - Correct notice display on the troubleshooting page. [TEC-5724]
+* Tweak - Updates Shepherd library to 0.0.9 from 0.0.6 including various improvements. Shepherd's changelog can be found here https://github.com/stellarwp/shepherd/blob/0.0.9/CHANGELOG.md
+* Tweak - Improve Day View accessibility by using semantic H2 headings for time separators to create a proper heading hierarchy. [TEC-5627]
+* Tweak - Improve mini calendar accessibility by adding descriptive ARIA labels and clarifying focus indicators for color-based event markers. [TEC-5630]
+* Tweak - Update heading levels for “Events at this venue” and “Events from this organizer” to improve accessibility and semantic hierarchy. [TEC-5636]
+* Accessibility - Add filter to wrap event content in a main landmark if needed, which allows for the 'Skip to Content' button to work. [TEC-5628]
+* Compatibility - Make method signatures in Builder explicitly nullable to resolve PHP 8.4 deprecation warnings. [TEC-5725]
+* Compatibility - Updates to support TEC v1 REST API Changes.
+* Language - 3 new strings added, 75 updated, 0 fuzzied, and 1 obsoleted.
+
+### [6.15.11] 2025-11-04
+
+* Tweak - Add JavaScript logic to move keyboard focus to expanded date content and announce event counts for screen reader users in month view mobile calendar [TEC-5231]
+* Tweak - Avoid logging a warning when bulk deleting events. [TEC-5721]
+* Tweak - Changed views: `blocks/parts/details`, `blocks/parts/organizer`, `blocks/parts/venue`, `modules/meta/details`, `modules/meta/organizer`, `modules/meta/venue`, `v2/month`, `v2/month/calendar-body/day/date-extras`, `v2/month/calendar-body/day/date`, `v2/month/calendar-header`
+* Tweak - Improve accessibility in the mini calendar by replacing <em> elements used for event dots with semantic <span>s and removing redundant aria-label and title attributes [TEC-5228]
+* Accessibility - Improve screen reader accessibility for weekday headers in month view calendar. [TEC-5719]
+* Accessibility - Remove the presentational role from the Month View table. [TEC-5719]
+* Accessibility - Replace misuse of definition list (`<dl>/<dt>/<dd>`) tags with semantic unordered lists (`<ul>/<li>`) in event details, organizer, and venue meta sections to improve screen reader accessibility and reduce confusion.[TEC-5224]
+* Language - 3 new strings added, 53 updated, 1 fuzzied, and 4 obsoleted.
+
+### [6.15.10] 2025-10-28
+
+* Security - Improve authorization checks in QR codes. [SVUL-28]
+* Security - Improve `ORDER BY` clause validation. [SVUL-26]
+
+### [6.15.9] 2025-10-21
+
+* Fix - Alter logic so category colors CSS is ony enqueued on event archive pages. [TEC-5419]
+* Tweak - Added actions: `tec_conditional_content_assets`
+* Tweak - Add upsell banner for recurrence functionality in classic editor. [TEC-5589]
+* Tweak - Add `tec_is_valid_view()` helper to check whether the current context represents a valid registered view. [TEC-5419]
+* Tweak - Disable Yoast SEO pagination meta tags on Events Calendar views to prevent invalid rel=next/prev links. [TEC-5000]
+* Tweak - Revert automatic CSS combination handling for Avada to restore default behavior. [TEC-5682]
+* Language - 3 new strings added, 8 updated, 0 fuzzied, and 0 obsoleted.
+
+### [6.15.8] 2025-10-14
+
+* Fix - Tweak a few style rules to ensure Kadence overrides work. [TEC-5504]
+* Tweak - Automatically disabled Avada’s “Combine Third Party CSS Files” option when The Events Calendar is active to prevent stylesheet conflicts.  [TEC-5682]
+* Tweak - Events list view structure updated to use proper list HTML. [TEC-5210]
+* Tweak - Make Tooltips on calendar view dismissable with `esc` key. [TEC-5217]
+* Language - 7 new strings added, 23 updated, 0 fuzzied, and 0 obsoleted.
+* Language - Fixed text domains and improved string translations across multiple components for better internationalization support.
+* Language - Move 'Free' string to TEC text domain for improved i18n. [TEC-5603]
+
+### [6.15.7] 2025-10-07
+
+* Tweak - Added `aria-label` to nav tags to make page landmarks unique. [TEC-5208]
+* Tweak - Event Date time block structure updated to improve accessibility. [TEC-5531]
+* Tweak - Add ARIA landmark roles and `aria-current` attributes to breadcrumbs to improve screen reader support. [TEC-5205]
+* Tweak - Replace breadcrumbs with a "Back to Events" link on Venue and Organizer single pages for clearer navigation and improved accessibility.[TEC-5207][TEC-5205]
+* Tweak - Change default opt-in status to prevent false positives in checks when the value is not set. [TEC-5583]
+* Tweak - Changed views: `blocks/event-datetime`, `v2/components/backlink`, `v2/components/breadcrumbs`, `v2/components/breadcrumbs/breadcrumb`, `v2/components/breadcrumbs/linked-breadcrumb`, `v2/components/header`, `v2/list/nav`, `v2/list/top-bar/nav`
+* Language - 4 new strings added, 6 updated, 0 fuzzied, and 0 obsoleted.
+
 ### [6.15.6] 2025-09-30
 
 * Version - The Events Calendar 6.15.6 is only compatible with Events Pro 7.7.6 and higher.
