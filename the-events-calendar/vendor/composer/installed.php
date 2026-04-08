@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'the-events-calendar/the-events-calendar',
-        'pretty_version' => 'dev-release/M26.dusknoir',
-        'version' => 'dev-release/M26.dusknoir',
-        'reference' => 'f004cdc9897a98b3f0cfab827582a372aa93cafc',
+        'pretty_version' => 'dev-release/M26.eevee',
+        'version' => 'dev-release/M26.eevee',
+        'reference' => '14aca7474fac7e73dbaa805b2fbcc485fbabd98c',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'the-events-calendar/the-events-calendar' => array(
-            'pretty_version' => 'dev-release/M26.dusknoir',
-            'version' => 'dev-release/M26.dusknoir',
-            'reference' => 'f004cdc9897a98b3f0cfab827582a372aa93cafc',
+            'pretty_version' => 'dev-release/M26.eevee',
+            'version' => 'dev-release/M26.eevee',
+            'reference' => '14aca7474fac7e73dbaa805b2fbcc485fbabd98c',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
