@@ -2,9 +2,9 @@
   'root' => 
   array (
     'name' => 'the-events-calendar/tribe-common',
-    'pretty_version' => 'dev-main',
-    'version' => 'dev-main',
-    'reference' => '81b19569d5b9e639dfdaa2b77c96affe63d06674',
+    'pretty_version' => 'dev-release/M26.typhlosion',
+    'version' => 'dev-release/M26.typhlosion',
+    'reference' => '95f4175f01ef13d94303f607a0b889d6124d4eea',
     'type' => 'wordpress-plugin',
     'install_path' => __DIR__ . '/../',
     'aliases' => 
